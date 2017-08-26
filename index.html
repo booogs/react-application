@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>React!</title>
+		
+		<script src="build/react.js"></script>
+		<script src="build/react-dom.js"></script>
+		<script src="build/babel.js"></script>
+		
+		<style>
+			#container {
+				padding: 50px;
+				background-color: #eee;
+			}
+			#container h1 {
+				font-size: 48px;
+				font-family: sans-serif;
+				color: #0080A8;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<!-- statement will render here -->
+			<!-- https://www.youtube.com/watch?v=OnNuve6ltgo -->
+		</div>
+		
+		<script type="text/babel">
+			
+			ReactDOM.render(
+				<h1>Printing this statement</h1>,
+				document.querySelector("#container")
+			);
+			
+		</script>
+	</body>
+</html>
